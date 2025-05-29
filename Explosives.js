@@ -1,8 +1,9 @@
- enabledMods = enabledMods || [];
-enabledMods.push("mods/Explosives.js");
+enabledMods = enabledMods || [];
 
-runAfterLoad(function() {
-    if (!Object.keys(categories).includes("explosives")) {
+enabledMods.push("mods/yourmod.js");
+
+runAfterLoad(() => {
+    if (!categories.explosives) {
         categories.explosives = {
             name: "Explosives",
             color: "#ff4444"
@@ -141,7 +142,6 @@ runAfterLoad(function() {
         category: "special",
         state: "gas",
         density: 1,
-        reactions: {},
         temp: 1200,
         tempLow: 200,
         stateLow: "fire",
