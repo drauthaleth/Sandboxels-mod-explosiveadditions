@@ -1,6 +1,6 @@
 enabledMods = enabledMods || [];
 
-enabledMods.push("mods/yourmod.js");
+enabledMods.push("mods/Explosives.js");
 
 runAfterLoad(() => {
     if (!categories.explosives) {
