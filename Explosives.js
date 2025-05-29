@@ -1,5 +1,5 @@
  enabledMods = enabledMods || [];
-enabledMods.push("mods/Explosives.js"); // Replace with your actual filename
+enabledMods.push("mods/Explosives.js");
 
 runAfterLoad(function() {
     if (!Object.keys(categories).includes("explosives")) {
